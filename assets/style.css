@@ -246,7 +246,8 @@ body {
 /* Override Splide default styles */
 .splide__track {
     border-radius: 20px;
-    overflow: visible;
+    height: 500px;
+
 }
 
 .splide__list {
@@ -923,13 +924,13 @@ body {
 .build-section .btn-primary {
     background: white;
     color: #041d52;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .careers-form .btn-primary {
     background: white;
     color: #041d52;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 
 .build-section .btn-primary:hover {
@@ -945,19 +946,19 @@ body {
 
 .careers-form .btn-primary:hover {
     background: transparent;
-    color: white;
+    color: black;
     border-color: black;
 }
 
 .careers-form .btn-outline-primary {
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
 }
 
 .build-section .btn-outline-primary:hover {
     background: white;
     color: #041d52;
-    border-color: white;
+    border-color: black;
 }
 
 .careers-form .btn-outline-primary:hover {
@@ -1011,28 +1012,28 @@ body {
 .careers-badge {
     display: inline-block;
     background: rgba(255, 255, 255, 0.1);
-    color: white;
+    color: black;
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 1px;
     margin-bottom: 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid black;
     backdrop-filter: blur(10px);
 }
 
 .careers-main-title {
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    color: black;
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
 
 .careers-main-description {
     font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
     margin-bottom: 3rem;
     line-height: 1.6;
     max-width: 600px;

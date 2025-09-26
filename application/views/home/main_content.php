@@ -2,7 +2,7 @@
     <section id="home" class="hero-video-section">
         <div class="video-background">
             <video autoplay muted loop playsinline style="width: 100%; ">
-                <source src="assets/large.mp4" type="video/mp4">
+                <source src="assets/heror.mp4" type="video/mp4">
                 <!-- Fallback image if video doesn't load -->
                 <img src="assets/images/leather-workshop-fallback.jpg" alt="Leather crafting workshop" class="fallback-image">
             </video>
@@ -47,8 +47,8 @@
 
             <!-- Splide Carousel -->
             <div class="splide" id="offerings-carousel">
-                <div class="splide__track">
-                    <ul class="splide__list">
+                <div class="splide__track" style="width: 100%;overflow: hidden;height: 100%;">
+                    <ul class="splide__list" style="width: 100%;">
                         <!-- Footwear Card -->
                         <li class="splide__slide">
                             <div class="offering-carousel-card">
@@ -191,16 +191,16 @@
     <!-- Section 4: Sustainable Production -->
     <section id="people-planet" class="sustainability-section">
         <div class="container">
-            <div class="row align-items-center justify-content-space-between">
+            <div class="row align-items-center justify-content-space-between" style="    justify-content: space-between;">
                 <div class="col-lg-6">
                     <div class="sustainability-video">
-                        <video class="img-fluid rounded" autoplay muted loop playsinline style="height:80vh;">
+                        <video class="img-fluid rounded" autoplay muted loop playsinline style="height:50vh;">
                             <source src="assets/video1.mp4" type="video/mp4">
 
                         </video>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                     <div style="position: relative;">
                         <h2 class="sustainability-title">SUSTAINABLE PRODUCTION, ETHICAL PRACTICES</h2>
 
@@ -236,10 +236,7 @@
 
     <!-- Section 6: Careers -->
     <section class="careers-section">
-        <div class="careers-background">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="Team collaboration" class="careers-bg-image">
-            <div class="careers-overlay"></div>
-        </div>
+
         <div class="careers-content">
             <div class="container">
                 <div class="row justify-content-center text-center">
@@ -261,6 +258,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col-md-7 mb-2">
+                        <img src="assets/care/1.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <img src="assets/care/2.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <img src="assets/care/3.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <img src="assets/care/4.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <img src="assets/care/5.jpg" alt="" style="width: 100%;">
+                    </div>
+                    <div class="col-md-3 mb-2">
+                        <img src="assets/care/6.jpg" alt="" style="width: 100%;">
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -269,7 +287,7 @@
     <section class="news-insights-section">
         <div class="container">
             <div class="news-header">
-                <h2 class="news-main-title">NEWS, INSIGHTS AND MORE FROM APOLLO FASHION</h2>
+                <h2 class="careers-main-title text-center">NEWS, INSIGHTS AND MORE FROM APOLLO FASHION</h2>
 
             </div>
 
@@ -287,7 +305,7 @@
                         <p class="card-excerpt">The fashion sector has a unique chance to set the standard for climate-conscious business strategies</p>
                         <div class="card-author">
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                            <span class="author-name">Shiraz Askari</span>
+                            <span class="author-name">The Week</span>
                         </div>
                     </div>
                 </article>
@@ -305,7 +323,7 @@
                         <p class="card-excerpt">The Union Budget 2025 offers a chance for India to boost its manufacturing sector, support skilled workers and become a global leader in industrial production while promoting sustainable growth and self-reliance</p>
                         <div class="card-author">
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Author" class="author-avatar">
-                            <span class="author-name">Shiraz Askari </span>
+                            <span class="author-name">First Post </span>
                         </div>
                     </div>
                 </article>
