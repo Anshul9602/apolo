@@ -56,9 +56,7 @@
                                     <img src="assets/suj.jpg" alt="Footwear" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-shoe-prints"></i>
-                                        </div>
+                                       
                                         <h3 class="offering-title">FOOTWEAR</h3>
                                         <p class="offering-description">From sturdy everyday wear to elegant high-fashion designs</p>
                                     </div>
@@ -73,9 +71,7 @@
                                     <img src="assets/shrt.jpg" alt="Outerwear" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-tshirt"></i>
-                                        </div>
+                                   
                                         <h3 class="offering-title">OUTERWEAR</h3>
                                         <p class="offering-description">Leather jackets and coats that blend style with durability.</p>
                                     </div>
@@ -90,9 +86,7 @@
                                     <img src="assets/bag.jpg" alt="Bags" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-shopping-bag"></i>
-                                        </div>
+                                       
                                         <h3 class="offering-title">BAGS</h3>
                                         <p class="offering-description">Versatile leather bags, crafted for both functionality and style</p>
                                     </div>
@@ -107,9 +101,7 @@
                                     <img src="assets/belt.jpg" alt="Belts" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-belt"></i>
-                                        </div>
+                                        
                                         <h3 class="offering-title">BELTS</h3>
                                         <p class="offering-description">A diverse collection of belts, from classic to contemporary.</p>
                                     </div>
@@ -122,9 +114,7 @@
                                     <img src="assets/suj.jpg" alt="Footwear" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-shoe-prints"></i>
-                                        </div>
+                                       
                                         <h3 class="offering-title">FOOTWEAR</h3>
                                         <p class="offering-description">From sturdy everyday wear to elegant high-fashion designs</p>
                                     </div>
@@ -139,9 +129,7 @@
                                     <img src="assets/shrt.jpg" alt="Outerwear" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-tshirt"></i>
-                                        </div>
+                                       
                                         <h3 class="offering-title">OUTERWEAR</h3>
                                         <p class="offering-description">Leather jackets and coats that blend style with durability.</p>
                                     </div>
@@ -156,9 +144,7 @@
                                     <img src="assets/bag.jpg" alt="Bags" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-shopping-bag"></i>
-                                        </div>
+                                      
                                         <h3 class="offering-title">BAGS</h3>
                                         <p class="offering-description">Versatile leather bags, crafted for both functionality and style</p>
                                     </div>
@@ -173,9 +159,7 @@
                                     <img src="assets/belt.jpg" alt="Belts" class="card-bg-image">
                                     <div class="card-overlay"></div>
                                     <div class="offering-card-content">
-                                        <div class="offering-icon">
-                                            <i class="fas fa-belt"></i>
-                                        </div>
+                                        
                                         <h3 class="offering-title">BELTS</h3>
                                         <p class="offering-description">A diverse collection of belts, from classic to contemporary.</p>
                                     </div>
@@ -194,13 +178,13 @@
             <div class="row align-items-center justify-content-space-between" style="    justify-content: space-between;">
                 <div class="col-lg-6">
                     <div class="sustainability-video">
-                        <video class="img-fluid rounded" autoplay muted loop playsinline style="height:50vh;">
+                        <video class="img-fluid rounded" autoplay muted loop playsinline style="height:60vh;">
                             <source src="assets/video1.mp4" type="video/mp4">
 
                         </video>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5 mt-md-0 mt-3">
                     <div style="position: relative;">
                         <h2 class="sustainability-title">SUSTAINABLE PRODUCTION, ETHICAL PRACTICES</h2>
 
@@ -219,15 +203,16 @@
     <section class="build-section" style="background-color: #fff;">
         <div class="container">
             <div class="row justify-content-center text-center">
-                <div class="col-md-8 mb-4">
-                    <img src="assets/buld.jpg" alt="">
+                <div class="col-md-5 mb-4">
+                    <img src="assets/buld.jpg" alt="" width="100%">
                 </div>
                 <div class="col-lg-8">
                     <h2 class="build-title">READY TO BUILD RESPONSIBLY?</h2>
-                    <p class="build-description">We match your vision with disciplined execution, for outcomes that compound. Send us a brief or a tech pack—we'll revert with a plan and a timeline.</p>
+                    <p class="build-description">-  We match your vision with disciplined execution for outcomes that last. Share your brief or requirements—
+                    we’ll respond with a tailored plan and timeline.</p>
                     <div class="build-buttons">
-                        <a href="#contact" class="btn btn-primary btn-lg me-3">Start a Project</a>
-                        <a href="#contact" class="btn btn-outline-primary btn-lg">Talk to Manufacturing</a>
+                        <a href="#contact" class="btn btn-primary btn-lg me-3">Start Your Project</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Our Team</a>
                     </div>
                 </div>
             </div>
@@ -241,16 +226,16 @@
             <div class="container">
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8">
-                        <div class="careers-badge">CAREERS AT AFIL</div>
-                        <h2 class="careers-main-title">JOIN THE TEAM BEHIND THE FUTURE OF WORK</h2>
-                        <p class="careers-main-description">At Apollo, we are building the tools that help companies thrive, and we are looking for people who want to shape how teams collaborate, grow, and succeed.</p>
+                        
+                        <h2 class="careers-main-title">JOIN THE TEAM BEHIND THE FUTURE WORK</h2>
+                        <p class="careers-main-description">At Apollo Fashion International, we are building the tools that help companies thrive, and we are looking for people who want to shape how teams collaborate, grow, and succeed.</p>
 
                         <div class="careers-form-container">
                             <form class="careers-form">
                                 <div class="form-row">
                                     <div class="build-buttons">
-                                        <a href="#contact" class="btn btn-primary btn-lg me-3">Start a Project</a>
-                                        <a href="#contact" class="btn btn-outline-primary btn-lg">Talk to Manufacturing</a>
+                                        <a href="#contact" class="btn btn-primary btn-lg me-3">CAREERS AT AFIL</a>
+                                        
                                     </div>
 
                                 </div>
@@ -265,18 +250,16 @@
                     <div class="col-md-4 mb-2">
                         <img src="assets/care/2.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="col-md-3 mb-2">
+                    <div class="col-md-4 mb-2">
                         <img src="assets/care/3.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="col-md-3 mb-2">
+                    <div class="col-md-4 mb-2">
                         <img src="assets/care/4.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="col-md-3 mb-2">
+                    <div class="col-md-4 mb-2">
                         <img src="assets/care/5.jpg" alt="" style="width: 100%;">
                     </div>
-                    <div class="col-md-3 mb-2">
-                        <img src="assets/care/6.jpg" alt="" style="width: 100%;">
-                    </div>
+                   
 
                 </div>
             </div>
@@ -287,10 +270,8 @@
     <section class="news-insights-section">
         <div class="container">
             <div class="news-header">
-                <h2 class="careers-main-title text-center">NEWS, INSIGHTS AND MORE FROM APOLLO FASHION</h2>
-
+                <h2 class="careers-main-title text-center">RESOURCES</h2>
             </div>
-
             <div class="news-cards-grid">
                 <!-- News Card 1 -->
                 <article class="news-card">

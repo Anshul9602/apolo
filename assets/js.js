@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Initializing Splide carousel...');
         initSplideCarousel();
     }, 500);
+
+    // Initialize Honours & Accolades slider
+    setTimeout(() => {
+        console.log('Initializing Honours & Accolades slider...');
+        initHonoursSlider();
+    }, 600);
 });
 
 // Scroll Effects
@@ -584,6 +590,38 @@ function initSplideCarousel() {
 
     } catch (error) {
         console.error('Failed to mount Splide carousel:', error);
+    }
+}
+
+// Honours & Accolades Slider Initialization
+function initHonoursSlider() {
+    const honoursEl = document.querySelector('#honours-slider');
+
+    if (!honoursEl) {
+        return;
+    }
+
+    try {
+        const honoursSplide = new Splide('#honours-slider', {
+            type: 'loop',
+            drag: true,
+            perPage: 3,
+            gap: '0px',
+            autoplay: true,
+            interval: 3500,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            arrows: true,
+            pagination: true,
+            speed: 700,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            keyboard: 'global',
+        });
+
+        honoursSplide.mount();
+        window.honoursSplide = honoursSplide;
+    } catch (e) {
+        console.error('Failed to initialize honours slider', e);
     }
 }
 

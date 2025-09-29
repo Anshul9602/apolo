@@ -13,14 +13,14 @@
     <!-- Splide.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="<?php echo base_url('') ?>assets/style.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center" href="<?php echo base_url('') ?>">
                     <img src="assets/logo.webp" alt="" class="logo" style="width: 250px;">
                 </a>
                 
@@ -37,21 +37,22 @@
                     </div>
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">About us</a>
+                            <a class="nav-link active" href="<?php echo base_url('About_Us') ?>">About us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="capabilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo base_url('Capa') ?>" id="capabilitiesDropdown">
                                 Capabilities
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="capabilitiesDropdown">
-                                <li><a class="dropdown-item" href="#leather-bag">Leather Bag</a></li>
-                                <li><a class="dropdown-item" href="#leather-jacket">Leather Jacket</a></li>
-                                <li><a class="dropdown-item" href="#leather-shoes">Leather Shoes</a></li>
-                                <li><a class="dropdown-item" href="#leather-belt">Leather Belt</a></li>
+                                
+                                <li><a class="dropdown-item" href="<?php echo base_url('Bag') ?>">Leather Bag</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('Jackets') ?>">Leather Jacket</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('Shoes') ?>">Leather Shoes</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('Belt') ?>">Leather Belt</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#afi-edge">The AFI Edge</a>
+                            <a class="nav-link" href="<?php echo base_url('AFI') ?>">The AFI Edge</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#technology">Technology</a>
@@ -60,23 +61,19 @@
                             <a class="nav-link" href="#people-planet">People & Planet</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="investorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="<?php echo base_url('Investor') ?>" id="investorDropdown">
                                 Investor Relations
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="investorDropdown">
-                                <li><a class="dropdown-item" href="#board-directors">Board of Directors</a></li>
+                                <li><a class="dropdown-item" href="<?php echo base_url('Investor') ?>">Board of Directors</a></li>
                                 <li><a class="dropdown-item" href="#policies">Policies</a></li>
                                 <li><a class="dropdown-item" href="#annual-reports">Annual Reports</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Contact
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="contactDropdown">
-                                <li><a class="dropdown-item" href="#careers">Careers</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url('Contact') ?>">Contact</a>
                         </li>
+                       
                     </ul>
                 </div>
             </div>
