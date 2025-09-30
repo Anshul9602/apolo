@@ -314,3 +314,129 @@
             </div>
         </div>
     </section>
+
+
+    <script>
+        // Splide Carousel Initialization
+function initSplideCarousel() {
+    const carouselElement = document.querySelector('#offerings-carousel');
+
+    if (!carouselElement) {
+        console.error('Splide carousel element not found');
+        return;
+    }
+
+    console.log('Initializing Splide carousel...');
+
+    // Initialize Splide with infinite scroll configuration
+    const splide = new Splide('#offerings-carousel', {
+        type: 'loop',
+        drag: true,
+        snap: true,
+        perPage: 4,
+        perMove: 1,
+        gap: '10px',
+        padding: '-8rem',
+        focus: 'center',
+        trimSpace: false,
+        autoplay: true,
+        interval: 3000,
+        pauseOnHover: true,
+        pauseOnFocus: true,
+        resetProgress: false,
+        arrows: true,
+        pagination: false,
+        speed: 700,
+        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+        keyboard: 'global',
+        wheel: false,
+
+        breakpoints: {
+            1200: {
+                perPage: 2,
+                padding: '5rem',
+                gap: '22px',
+            },
+            768: {
+                perPage: 1,
+                padding: '2.5rem',
+                gap: '16px',
+            },
+            480: {
+                perPage: 1,
+                padding: '1.25rem',
+                gap: '12px',
+            }
+        },
+
+        classes: {
+            arrow: 'splide__arrow custom-arrow',
+            prev: 'splide__arrow--prev custom-prev',
+            next: 'splide__arrow--next custom-next',
+            pagination: 'splide__pagination custom-pagination',
+            page: 'splide__pagination__page custom-page',
+        }
+    });
+
+    // Mount the carousel
+    try {
+        splide.mount();
+        console.log('Splide carousel mounted successfully');
+
+        // Add success indicator
+        const successIndicator = document.createElement('div');
+        successIndicator.innerHTML = '<i class="fas fa-check-circle"></i> Splide Carousel Active';
+        successIndicator.style.cssText = `
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 255, 127, 0.1);
+            color: rgba(0, 255, 127, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 127, 0.3);
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(0, 255, 127, 0.2);
+        `;
+
+        const section = document.querySelector('.offerings-carousel-section .container-fluid');
+        if (section) {
+            section.style.position = 'relative';
+            section.appendChild(successIndicator);
+
+            // Hide indicator after 4 seconds
+            setTimeout(() => {
+                successIndicator.style.opacity = '0';
+                successIndicator.style.transition = 'opacity 0.5s ease';
+                setTimeout(() => {
+                    if (successIndicator.parentNode) {
+                        successIndicator.parentNode.removeChild(successIndicator);
+                    }
+                }, 500);
+            }, 4000);
+        }
+
+        // Event listeners for debugging
+        splide.on('moved', function(newIndex, prevIndex) {
+            console.log('Splide moved from slide', prevIndex, 'to slide', newIndex);
+        });
+
+        splide.on('autoplay:playing', function() {
+            console.log('Splide autoplay started');
+        });
+
+        splide.on('autoplay:pause', function() {
+            console.log('Splide autoplay paused');
+        });
+
+        // Store splide instance globally for debugging
+        window.splideCarousel = splide;
+
+    } catch (error) {
+        console.error('Failed to mount Splide carousel:', error);
+    }
+}
+
+    </script>

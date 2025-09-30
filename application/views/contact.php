@@ -21,7 +21,7 @@
 <!-- Contact Information and Form Section -->
 <section class="contact-main-section">
     <div class="container">
-        <div class="row g-4">
+        <div class="row g-4 m-0">
             <!-- Contact Information Column -->
             <div class="col-lg-6 p-0">
                 <div class="contact-info-card">

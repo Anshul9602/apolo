@@ -279,7 +279,7 @@ html, body {
 </style>
 
 <!-- Hero Section -->
-<div class="heroSectionHeight">
+<div class="heroSectionHeight" style="margin-top:70px;">
     <img src="https://img.freepik.com/free-photo/close-up-shoemaker-using-sewing-machine_171337-12305.jpg" 
          alt="Close-up shoemaker using sewing machine">
     <div class="overlay"></div>

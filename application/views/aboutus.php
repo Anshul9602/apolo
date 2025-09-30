@@ -1,4 +1,4 @@
-<section class="about-hero">
+<section class="about-hero" style="margin-top:75px;">
     <div class="container">
         <div class="row g-0 h-100">
             <!-- Left: Text -->
@@ -21,14 +21,20 @@
 </section>
 
 
-
+<style>
+    @media (max-width:678px) {
+        .pos-5 {
+            padding-top: 50px;
+        }
+    }
+</style>
 
 <!-- Section 2: Full-screen Content Cards -->
 <section class="about-content-cards">
     <div class="container px-0">
-        <div class="row ">
+        <div class="row m-0">
             <!-- Bags -->
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <a class="card-link" href="<?php echo base_url('Bag') ?>" aria-label="Bags">
                     <div class="content-card">
                         <img class="content-card-media" src="assets/about-bag.jpg" alt="Bags">
@@ -39,7 +45,7 @@
                 </a>
             </div>
             <!-- Jackets -->
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <a class="card-link" href="<?php echo base_url('Jackets') ?>" aria-label="Jackets">
                     <div class="content-card">
                         <img class="content-card-media" src="assets/about-jacket.png" alt="Jackets">
@@ -50,7 +56,7 @@
                 </a>
             </div>
             <!-- Belts -->
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <a class="card-link" href="<?php echo base_url('Belt') ?>" aria-label="Belts">
                     <div class="content-card">
                         <img class="content-card-media" src="assets/about-belt.png" alt="Belts">
@@ -61,7 +67,7 @@
                 </a>
             </div>
             <!-- Shoes -->
-            <div class="col-12 col-md-6 col-xl-3">
+            <div class="col-12 col-md-6 col-xl-3 mb-3">
                 <a class="card-link" href="<?php echo base_url('Shoes') ?>" aria-label="Shoes">
                     <div class="content-card">
                         <img class="content-card-media" src="assets/about-shoes.jpeg" alt="Shoes">
@@ -93,6 +99,9 @@
                             </li>
                             <li class="splide__slide honours-slide">
                                 <img src="assets/about-belt.png" alt="Honours Slide 3" class="honours-image">
+                            </li>
+                            <li class="splide__slide honours-slide">
+                                <img src="assets/about-shoes.jpeg" alt="Honours Slide 3" class="honours-image">
                             </li>
                         </ul>
                     </div>
@@ -183,7 +192,7 @@
             </div>
             <div class="leader-image-panel">
                 <div class="leader-image">
-                    <img src="assets/found.jpg" alt="" style="height: 100%;">
+                    <img src="assets/found.JPG" alt="" style="height: 100%;">
 
                 </div>
 

@@ -2,10 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM Content Loaded - Initializing...');
     // Initialize all functionality
-    initScrollEffects();
+
     initSmoothScrolling();
-    initDownloadButtons();
-    initAccordion();
     initNavbarScroll();
     initAnimations();
     initRollingStats();
@@ -23,31 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 600);
 });
 
-// Scroll Effects
-function initScrollEffects() {
-    const fixedDownload = document.querySelector('.fixed-download');
 
-    window.addEventListener('scroll', function() {
-        const scrollPosition = window.pageYOffset;
-
-        // Show/hide fixed download button
-        if (scrollPosition > 500) {
-            fixedDownload.classList.add('show');
-        } else {
-            fixedDownload.classList.remove('show');
-        }
-
-        // Add scroll effect to navbar
-        const navbar = document.querySelector('.header');
-        if (scrollPosition > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-        } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
-        }
-    });
-}
 
 // Smooth Scrolling for Navigation Links
 function initSmoothScrolling() {
@@ -68,60 +42,6 @@ function initSmoothScrolling() {
                     behavior: 'smooth'
                 });
             }
-        });
-    });
-}
-
-// Download Button Functionality
-function initDownloadButtons() {
-    const downloadButtons = document.querySelectorAll('.download-btn');
-
-    downloadButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Simulate download action
-            showNotification('Download started! Please check your downloads folder.', 'success');
-
-            // In a real application, this would trigger the actual download
-            // For demo purposes, we'll just show a notification
-        });
-    });
-}
-
-// Social Media Button Functionality
-function initSocialButtons() {
-    const whatsappBtn = document.querySelector('a[href*="whatsapp"]');
-    const telegramBtn = document.querySelector('a[href*="telegram"]');
-
-    if (whatsappBtn) {
-        whatsappBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Open WhatsApp in new tab
-            window.open('https://wa.me/918502875679', '_blank');
-        });
-    }
-
-    if (telegramBtn) {
-        telegramBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // Open Telegram in new tab
-            window.open('https://t.me/mama567matka', '_blank');
-        });
-    }
-}
-
-// Accordion Functionality
-function initAccordion() {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-
-    accordionButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all buttons
-            accordionButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Add active class to clicked button
-            this.classList.add('active');
         });
     });
 }
@@ -172,70 +92,6 @@ function initAnimations() {
     const animatedElements = document.querySelectorAll('.stat-item, .rate-card, .accordion-item');
     animatedElements.forEach(el => {
         observer.observe(el);
-    });
-}
-
-// Notification System
-function showNotification(message, type = 'info') {
-    // Create notification element
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.innerHTML = `
-        <div class="notification-content">
-            <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>
-            <span>${message}</span>
-        </div>
-    `;
-
-    // Add styles
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        background: ${type === 'success' ? '#28a745' : '#007bff'};
-        color: white;
-        padding: 1rem 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        z-index: 9999;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        max-width: 300px;
-    `;
-
-    // Add to DOM
-    document.body.appendChild(notification);
-
-    // Animate in
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-
-    // Remove after 3 seconds
-    setTimeout(() => {
-        notification.style.transform = 'translateX(100%)';
-        setTimeout(() => {
-            if (notification.parentNode) {
-                notification.parentNode.removeChild(notification);
-            }
-        }, 300);
-    }, 3000);
-}
-
-// Game Rate Tab Functionality
-function initGameTabs() {
-    const tabButtons = document.querySelectorAll('[data-bs-toggle="pill"]');
-
-    tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Remove active class from all tabs
-            tabButtons.forEach(btn => {
-                btn.classList.remove('active');
-            });
-
-            // Add active class to clicked tab
-            this.classList.add('active');
-        });
     });
 }
 
@@ -316,77 +172,6 @@ function initMobileMenu() {
 
 // Initialize mobile menu
 initMobileMenu();
-
-// Rate Card Hover Effects
-function initRateCardEffects() {
-    const rateCards = document.querySelectorAll('.rate-card');
-
-    rateCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px) scale(1.02)';
-            this.style.boxShadow = '0 8px 25px rgba(4, 29, 82, 0.15)';
-        });
-
-        card.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-            this.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.1)';
-        });
-    });
-}
-
-// Initialize rate card effects
-initRateCardEffects();
-
-// Lazy Loading for Images
-function initLazyLoading() {
-    const images = document.querySelectorAll('img[data-src]');
-
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-
-    images.forEach(img => imageObserver.observe(img));
-}
-
-// Initialize lazy loading
-initLazyLoading();
-
-// Performance Optimization
-function optimizePerformance() {
-    // Debounce scroll events
-    let scrollTimeout;
-    const originalScrollHandler = window.onscroll;
-
-    window.onscroll = function() {
-        if (scrollTimeout) {
-            clearTimeout(scrollTimeout);
-        }
-
-        scrollTimeout = setTimeout(() => {
-            if (originalScrollHandler) {
-                originalScrollHandler();
-            }
-        }, 10);
-    };
-}
-
-// Initialize performance optimizations
-optimizePerformance();
-
-// Error Handling
-window.addEventListener('error', function(e) {
-    console.error('JavaScript Error:', e.error);
-    // In production, you might want to send this to an error tracking service
-});
-
-
 
 // Rolling Stats Functionality
 function initRollingStats() {
@@ -471,128 +256,6 @@ function initRollingStats() {
     console.log('Rolling stats auto-play started (2.5 second intervals)');
 }
 
-// Splide Carousel Initialization
-function initSplideCarousel() {
-    const carouselElement = document.querySelector('#offerings-carousel');
-
-    if (!carouselElement) {
-        console.error('Splide carousel element not found');
-        return;
-    }
-
-    console.log('Initializing Splide carousel...');
-
-    // Initialize Splide with infinite scroll configuration
-    const splide = new Splide('#offerings-carousel', {
-        type: 'loop',
-        drag: true,
-        snap: true,
-        perPage: 4,
-        perMove: 1,
-        gap: '10px',
-        padding: '-8rem',
-        focus: 'center',
-        trimSpace: false,
-        autoplay: true,
-        interval: 3000,
-        pauseOnHover: true,
-        pauseOnFocus: true,
-        resetProgress: false,
-        arrows: true,
-        pagination: false,
-        speed: 700,
-        easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
-        keyboard: 'global',
-        wheel: false,
-
-        breakpoints: {
-            1200: {
-                perPage: 2,
-                padding: '5rem',
-                gap: '22px',
-            },
-            768: {
-                perPage: 1,
-                padding: '2.5rem',
-                gap: '16px',
-            },
-            480: {
-                perPage: 1,
-                padding: '1.25rem',
-                gap: '12px',
-            }
-        },
-
-        classes: {
-            arrow: 'splide__arrow custom-arrow',
-            prev: 'splide__arrow--prev custom-prev',
-            next: 'splide__arrow--next custom-next',
-            pagination: 'splide__pagination custom-pagination',
-            page: 'splide__pagination__page custom-page',
-        }
-    });
-
-    // Mount the carousel
-    try {
-        splide.mount();
-        console.log('Splide carousel mounted successfully');
-
-        // Add success indicator
-        const successIndicator = document.createElement('div');
-        successIndicator.innerHTML = '<i class="fas fa-check-circle"></i> Splide Carousel Active';
-        successIndicator.style.cssText = `
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 255, 127, 0.1);
-            color: rgba(0, 255, 127, 0.9);
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(0, 255, 127, 0.3);
-            z-index: 10;
-            box-shadow: 0 4px 12px rgba(0, 255, 127, 0.2);
-        `;
-
-        const section = document.querySelector('.offerings-carousel-section .container-fluid');
-        if (section) {
-            section.style.position = 'relative';
-            section.appendChild(successIndicator);
-
-            // Hide indicator after 4 seconds
-            setTimeout(() => {
-                successIndicator.style.opacity = '0';
-                successIndicator.style.transition = 'opacity 0.5s ease';
-                setTimeout(() => {
-                    if (successIndicator.parentNode) {
-                        successIndicator.parentNode.removeChild(successIndicator);
-                    }
-                }, 500);
-            }, 4000);
-        }
-
-        // Event listeners for debugging
-        splide.on('moved', function(newIndex, prevIndex) {
-            console.log('Splide moved from slide', prevIndex, 'to slide', newIndex);
-        });
-
-        splide.on('autoplay:playing', function() {
-            console.log('Splide autoplay started');
-        });
-
-        splide.on('autoplay:pause', function() {
-            console.log('Splide autoplay paused');
-        });
-
-        // Store splide instance globally for debugging
-        window.splideCarousel = splide;
-
-    } catch (error) {
-        console.error('Failed to mount Splide carousel:', error);
-    }
-}
-
 // Honours & Accolades Slider Initialization
 function initHonoursSlider() {
     const honoursEl = document.querySelector('#honours-slider');
@@ -616,6 +279,20 @@ function initHonoursSlider() {
             speed: 700,
             easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
             keyboard: 'global',
+            breakpoints: {
+                1200: {
+                    perPage: 3,
+                    gap: '0px'
+                },
+                992: {
+                    perPage: 1,
+                    gap: '0px'
+                },
+                768: {
+                    perPage: 1,
+                    gap: '0px'
+                }
+            }
         });
 
         honoursSplide.mount();
@@ -625,6 +302,92 @@ function initHonoursSlider() {
     }
 }
 
-// Console Welcome Message
-console.log('%c🏭 Welcome to Apollo Fashion International! 🏭', 'color: #041d52; font-size: 16px; font-weight: bold;');
-console.log('%cBuilt with ❤️ using HTML, CSS & JavaScript + Splide.js', 'color: #128C7f; font-size: 12px;');
+// Splide Carousel Initialization (for main offerings carousel)
+function initSplideCarousel() {
+    const carouselElement = document.querySelector('#offerings-carousel');
+
+    if (!carouselElement) {
+        console.error('Splide carousel element not found');
+        return;
+    }
+
+    console.log('Initializing Splide carousel...');
+
+    try {
+        // Initialize Splide with infinite scroll configuration
+        const splide = new Splide('#offerings-carousel', {
+            type: 'loop',
+            drag: true,
+            snap: true,
+            perPage: 4,
+            perMove: 1,
+            gap: '10px',
+            padding: '-8rem',
+            focus: 'center',
+            trimSpace: false,
+            autoplay: true,
+            interval: 3000,
+            pauseOnHover: true,
+            pauseOnFocus: true,
+            resetProgress: false,
+            arrows: true,
+            pagination: false,
+            speed: 700,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            keyboard: 'global',
+            wheel: false,
+
+            breakpoints: {
+                1200: {
+                    perPage: 2,
+                    padding: '5rem',
+                    gap: '22px',
+                },
+                768: {
+                    perPage: 1,
+                    padding: '2.5rem',
+                    gap: '16px',
+                },
+                480: {
+                    perPage: 1,
+                    padding: '1.25rem',
+                    gap: '12px',
+                }
+            }
+        });
+
+        splide.mount();
+        window.splideCarousel = splide;
+
+    } catch (error) {
+        console.error('Failed to mount Splide carousel:', error);
+    }
+}
+
+// Performance Optimization
+function optimizePerformance() {
+    // Debounce scroll events
+    let scrollTimeout;
+    const originalScrollHandler = window.onscroll;
+
+    window.onscroll = function() {
+        if (scrollTimeout) {
+            clearTimeout(scrollTimeout);
+        }
+
+        scrollTimeout = setTimeout(() => {
+            if (originalScrollHandler) {
+                originalScrollHandler();
+            }
+        }, 10);
+    };
+}
+
+// Initialize performance optimizations
+optimizePerformance();
+
+// Error Handling
+window.addEventListener('error', function(e) {
+    console.error('JavaScript Error:', e.error);
+    // In production, you might want to send this to an error tracking service
+});
