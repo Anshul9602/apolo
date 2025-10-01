@@ -39,7 +39,7 @@
             <div class="text-center position-relative d-flex flex-column justify-content-center align-items-center" style="height:100%; z-index:2;">
                 <h1 class="fw-bold display-3 text-white"> Premium Leather Shoes,<br> Built for Your Brand</h1>
 
-                <a href="<?php echo base_url('Contact') ?>" class="btn btn-primary mt-4" style="background-color:#002D60; border:none; padding:12px 30px; font-weight:bold; border-radius:8px;">Contact Us</a>
+                <a href="<?php echo base_url('Contact') ?>" class="btn btn-primary mt-4" style="background-color: transparent;border: 1px solid;padding:12px 30px;font-weight:bold;border-radius:8px;">Contact Us</a>
             </div>
         </div>
     </div>
@@ -181,7 +181,7 @@
                 <p style="font-size:16px; line-height:1.7;">
                     From personalized designs and logo embossing to private labeling and exclusive packaging, our services cater to diverse business requirements. With the ability to handle large-scale production and ensure on-time delivery, <span style="color:#002D60; font-weight:bold;">AFIL</span> is the ideal choice for businesses seeking a reliable leather jacket manufacturer.
                 </p>
-                <a href="<?php echo base_url('Contact') ?>" class="btn" style="background-color:#002D60; color:#fff; padding:12px 30px; font-weight:bold; border-radius:8px; transition: all 0.3s; display:inline-block; margin-top:10px;" onmouseover="this.style.backgroundColor='#001f40';" onmouseout="this.style.backgroundColor='#002D60';">
+                <a href="<?php echo base_url('Contact') ?>" class="btn" style="background-color: transparent;color: #000;padding:12px 30px;font-weight:bold;border-radius:8px;transition: all 0.3s;display:inline-block;margin-top:10px;border: 1px solid;" onmouseover="this.style.backgroundColor='#001f40';" onmouseout="this.style.backgroundColor='#002D60';">
                     Contact Us Today
                 </a>
             </div>

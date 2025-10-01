@@ -4,8 +4,8 @@
             <!-- Left: Text -->
             <div class="col-12 col-lg-6 d-flex align-items-center">
                 <div class="about-hero-content w-100 ">
-                    <h6 class="about-hero-kicker mb-3">FASHION MANUFACTURING SINCE 1994</h6>
-                    <h2 class="about-hero-title mb-4">About Apollo Green Energy: A Journey In Clean Energy Excellence</h2>
+
+                    <h2 class="about-hero-title mb-4">FASHION MANUFACTURING SINCE 1994</h2>
                     <p class="about-hero-text mb-0">
                         Since its inception in 1994, Apollo Fashion International Limited has been dedicated to bridging the gap between traditional craftsmanship and contemporary fashion demands. We started with a clear focus on quality and innovation, enabling us to support global fashion brands with diverse, high-quality products. Our approach combines the best of artisan techniques with modern manufacturing processes, ensuring that our clients always receive products that enhance their collections and appeal to modern consumers. This commitment to excellence and adaptability makes us a preferred choice for brands looking to deliver outstanding fashion outcomes.
                     </p>

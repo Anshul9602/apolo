@@ -55,10 +55,10 @@
                             <a class="nav-link" href="<?php echo base_url('AFI') ?>">The AFI Edge</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#technology">Technology</a>
+                            <a class="nav-link" href="<?php echo base_url('Tech') ?>">Technology</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#people-planet">People & Planet</a>
+                            <a class="nav-link" href="<?php echo base_url('People') ?>">People & Planet</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="<?php echo base_url('Investor') ?>" id="investorDropdown">
